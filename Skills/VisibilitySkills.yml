@@ -1,0 +1,26 @@
+#Visibility Skill File
+#Goes with VisibilityMob.yml
+
+#Player scoreboard value Visibility: 
+#1 - player cannot see the VisibilityMob
+#else - player can see VisibilityMob
+
+#Note: particlering effects for visualizing sudoskill steps
+
+VisibilityRadius:
+    Skills:
+    - sudoskill{s=VisibilityRadius2;setcasterastrigger=true}
+    #- effect:particlering{p=flame;radius=1.5;points=16;amount=1;y=1;hS=0;vS=0} @self
+  VisibilityRadius2:
+    Conditions:
+    - score{o=Visibility;v=1} true
+    Skills:
+    #- effect:particlering{p=soul_fire_flame;radius=1.5;points=16;amount=1;y=1;hS=0;vS=0} @self SELF IS YOU
+    #- effect:particlering{p=flame;radius=1.5;points=16;amount=1;y=1;hS=0;vS=0} @trigger TRIGGER IS MOB
+    - delay 1
+    - sudoskill{s=VisibilityRadius3;setcasterastrigger=true} @trigger
+  VisibilityRadius3:
+    Skills:
+    - hide{d=80} @trigger
+    #- effect:particlering{p=totem_of_undying;radius=1.5;points=16;amount=1;y=2;hS=0;vS=0} @self SELF IS MOB
+    #- effect:particlering{p=crit;radius=1.5;points=16;amount=1;y=2;hS=0;vS=0} @trigger TRIGGER IS YOU
