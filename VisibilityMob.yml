@@ -1,0 +1,18 @@
+#Visibility Mob File
+#Goes with VisibilitySkill.yml
+
+VisibilityMob:
+    Type: zombie
+    Display: 'The Mirage'
+    Health: 20
+    Damage: 1
+    Options:
+       MovementSpeed: 0.01
+       PreventOtherDrops: true
+       Silent: true
+       Collidable: true
+       KnockbackResistance: 0.5
+       FollowRange: 30
+       PreventSunburn: true
+    Skills:
+    - skill{s=VisibilityRadius} @PIR{r=30} ~onTimer:20 #Mob visible only to players with score Visiblity != 1
