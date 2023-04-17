@@ -1,5 +1,8 @@
-# Bdog's MythicMobs Projects
-A repository for mythic mob projects
+## Bdog's MythicMobs Projects
+A repository for my mythic mob projects
 
-My gif \n
+# Mob visibility based on scoreboard value 
+[Mobs](Mobs/VisibilityMob.yml) and [Skills](Skills/VisibilitySkills.yml)
+
+
 ![](https://github.com/01bdog20/MythicMobsProjects/blob/main/gifs/visibility.gif)
