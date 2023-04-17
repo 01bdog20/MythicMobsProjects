@@ -1,12 +1,12 @@
 <!-- This is a comment. It will not be displayed in the rendered output. -->
 
-# Bdog's MythicMobs Projects <!-- omit in toc --> {#top}
+# <a name="TOP">Bdog's MythicMobs Projects </a>
 A repository for my mythic mob projects
 
 ## Table of Contents
-- [Visibility Scoreboard System]
+- [Visibility Scoreboard System](#VIS)
 
-## Visibility Scoreboard System 
+<a name="VIS">## Visibility Scoreboard System </a>
 Mobs can only be seen by players with a certain scoreboard value.
 
 
@@ -22,4 +22,4 @@ Once the files are installed in your mythicmob directories create a scoreboard v
 
 
 
-[Back to top](#top)
+[Back to top](#TOP)
