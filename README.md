@@ -1,12 +1,12 @@
 <!-- This is a comment. It will not be displayed in the rendered output. -->
 
-# Bdog's MythicMobs Projects {#top}
+# Bdog's MythicMobs Projects <!-- omit in toc --> {#top}
 A repository for my mythic mob projects
 
 ## Table of Contents
-- [Visibility Scoreboard System](#visibility-scoreboard-system)
+- [Visibility Scoreboard System]
 
-## Visibility Scoreboard System {#visibility-scoreboard-system}
+## Visibility Scoreboard System 
 Mobs can only be seen by players with a certain scoreboard value.
 
 
