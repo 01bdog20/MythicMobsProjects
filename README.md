@@ -1,9 +1,12 @@
 <!-- This is a comment. It will not be displayed in the rendered output. -->
 
-# Bdog's MythicMobs Projects
+# Bdog's MythicMobs Projects {#top}
 A repository for my mythic mob projects
 
-## Visibility Scoreboard System 
+## Table of Contents
+- [Visibility Scoreboard System](#visibility-scoreboard-system)
+
+## Visibility Scoreboard System {#visibility-scoreboard-system}
 Mobs can only be seen by players with a certain scoreboard value.
 
 
@@ -15,3 +18,8 @@ Once the files are installed in your mythicmob directories create a scoreboard v
 
 <img src="/gifs/visibility.gif" alt="Visibility based on scoreboard value 1 or 0" width="50%" height="50%">  
 
+
+
+
+
+[Back to top](#top)
