@@ -5,6 +5,7 @@ A repository for my mythic mob projects
 
 ## Table of Contents
 - [Visibility Scoreboard System](#VIS)
+- [Bottom](#BOTTOM)
 
 ## Visibility Scoreboard System <a name="VIS"></a>
 Mobs can only be seen by players with a certain scoreboard value.
@@ -30,4 +31,4 @@ Once the files are installed in your mythicmob directories create a scoreboard v
 .
 .
 
-[Back to top](#TOP)
+[Back to top](#TOP) <a name="BOTTOM"></a>
