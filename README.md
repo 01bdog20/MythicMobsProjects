@@ -4,8 +4,8 @@
 A repository for my mythic mob projects
 
 ## Table of Contents
-- [Visibility Scoreboard System](#VIS)
-- [Launch Pad](#LAUNCH)
+- [Visibility Scoreboard System](#Visibility Scoreboard System)
+- [Launch Pad](#Launch Pad)
 - [Bottom](#BOTTOM)
 
 ## Visibility Scoreboard System <a name="VIS"></a>
