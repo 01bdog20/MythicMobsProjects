@@ -29,6 +29,7 @@ Launch pad that can modifies players vertical velocity.
 
 ### Usage
 Spawn the LaunchPadUp mob and walk on it to be launched. Modify the x=# y=# z=# in LaunchPadSkills.yml to alter 3D velocity.
+
 <img src="/gifs/launchpad.gif" alt="" width="50%" height="50%">  
 
 .
