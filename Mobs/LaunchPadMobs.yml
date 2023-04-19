@@ -1,0 +1,33 @@
+LaunchPadUp:
+  Type: Silverfish
+  Disguise: falling_block moss_carpet
+  Health: 40
+  Damage: 18
+  Faction: Untouchable
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 hurtbytarget
+  - 2 players
+  Options:
+    Jockey: False
+    PreventJockeyMounts: true
+    AlwaysShowName: true
+    MovementSpeed: 0.01
+    PreventOtherDrops: true
+    Silent: true
+    Invincible: true
+    KnockbackResistance: 1
+  DamageModifiers:
+  - FALL 0
+  - FIRE_TICK 10
+  Skills:
+  - velocity{m=set;x=0;y=0;z=0} @self ~onTimer:1
+  - cancelevent{sync=true} @self ~onAttack
+  - effect:particlering{p=redstone;color=#87CEB1;size=2;radius=0.75;points=16;amount=1;y=0;hS=0;vS=0} @self ~onTimer:10
+  - remove @Children ~onDeath
+  - remove @Children ~onDespawn
+  - SudoSkill{s=LaunchPadUp;setcasterastrigger=true} @PIR{r=1;limit=10;targetcreative=true} ~onTimer:1
