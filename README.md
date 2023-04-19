@@ -4,11 +4,11 @@
 A repository for my mythic mob projects
 
 ## Table of Contents
-- [Visibility Scoreboard System](#VIS)
-- [Launch Pad](#LAUNCH)
+- [Visibility Scoreboard System](#Visibility)
+- [Launch Pad](#Launch)
 - [Bottom](#BOTTOM)
 
-## Visibility Scoreboard System <a name="VIS"></a>
+## Visibility Scoreboard System <a name="Visibility"></a>
 Mobs can only be seen by players with a certain scoreboard value.
 
 
@@ -21,7 +21,7 @@ Once the files are installed in your mythicmob directories create a scoreboard v
 <img src="/gifs/visibility.gif" alt="" width="50%" height="50%">  
 
 
-## Launch Pad <a name="LAUNCH"></a>
+## Launch Pad <a name="Launch"></a>
 Launch pad that can modifies players vertical velocity. 
 
 ### Files
