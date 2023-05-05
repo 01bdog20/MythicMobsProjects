@@ -19,7 +19,7 @@ Tool that you can use to scan for diamonds nearby.
 [XrayMobs.yml](Mobs/XrayMobs.yml) & [XraySkills.yml](Skills/XraySkills.yml) & [XrayItems.yml](Items/XrayItems.yml)
 
 ### Usage
-Hold the detector item and face towards a cluster of blocks. Right click to scan. This method scans ten 5x5 grids based on the direction the caster is looking. Each block that is not diamond ore is temporarily masked as glass, and each block has a temporary mob summoned in it, it detects what block its in and if it is inside a diamond block then the mob disguises itself temporarily then despawns. Else, it despawns instantly. The positions of the detected ores are relative to where actual ores are. (The mass of ores in the back of this gif are from a plugin called Orebfuscator, an Anti-Xray plugin)
+Hold the detector and face a cluster of blocks. Right-click to scan. This method scans ten 5x5 grids in the direction you're looking. Non-diamond ore blocks are temporarily masked as glass, and each block has a temporary mob spawned in it to detect if it's inside a diamond block. If it is, the mob disguises itself temporarily before despawning, otherwise, it despawns instantly. The detected ore positions are relative to the actual ore locations. (The mass of ores in the back of this gif are from a plugin called Orebfuscator, an Anti-Xray plugin)
 
 <img src="/gifs/xray.gif" alt="" width="50%" height="50%">  
 
