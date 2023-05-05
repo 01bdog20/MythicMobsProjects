@@ -1,0 +1,13 @@
+SeeThroughDummy:
+ Type: armor_stand
+ Display: '&dummy'
+ Health: 100
+ Skills:
+ - skill{s=SeeThrough} @Location{c=<caster.l.x.double>,<caster.l.y.double>,<caster.l.z.double>,0,0} ~onSpawn
+ Options:
+    MovementSpeed: 0.001
+    PreventOtherDrops: true
+    Silent: true
+    Collidable: true
+    LockPitch: true
+    Invisible: true
