@@ -9,6 +9,7 @@ All files should work on 1.19.2.
 - [Visibility Scoreboard System](#Visibility)
 - [Launch Pad](#Launch)
 - [Bottom](#BOTTOM)
+- [Xray Ore Detector](#XRAY)
 
 ## Visibility Scoreboard System <a name="Visibility"></a>
 Mobs can only be seen by players with a certain scoreboard value.
