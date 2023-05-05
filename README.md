@@ -6,10 +6,24 @@ Plugins involved: MythicMobs, ModelEngine, MythicCrucible, Libsdisguises
 All files should work on 1.19.2.
 
 ## Table of Contents
+- [Ore Detector](#XRAY)
 - [Visibility Scoreboard System](#Visibility)
 - [Launch Pad](#Launch)
 - [Bottom](#BOTTOM)
-- [Ore Detector](#XRAY)
+
+
+
+## Ore Detector (Xray) <a name="Xray"></a>
+Tool that you can use to scan for diamonds nearby.
+
+### Files
+[XrayMobs.yml](Mobs/XrayMobs.yml) & [XraySkills.yml](Skills/XraySkills.yml) & [XrayItems.yml](Items/XrayItems.yml)
+
+### Usage
+Hold the detector item and face towards a cluster of blocks. Right click to scan. This method scans ten 5x5 grids based on the direction the caster is looking. Each block has a temporary mob summoned in it, it detects what block its in and if it is inside a diamond block then the mob disguises itself temporarily then despawns. Else, it despawns instantly. The positions of the detected ores are relative to where actual ores are. 
+
+<img src="/gifs/xray.gif" alt="" width="50%" height="50%">  
+
 
 ## Visibility Scoreboard System <a name="Visibility"></a>
 Mobs can only be seen by players with a certain scoreboard value.
@@ -37,16 +51,7 @@ Spawn the LaunchPadUp mob and walk on it to be launched. Modify the x=# y=# z=# 
 
 
 
-## Ore Detector (Xray) <a name="Xray"></a>
-Tool that you can use to scan for diamonds nearby.
 
-### Files
-[XrayMobs.yml](Mobs/XrayMobs.yml) & [XraySkills.yml](Skills/XraySkills.yml) & [XrayItems.yml](Items/XrayItems.yml)
-
-### Usage
-Hold the detector item and face towards a cluster of blocks. Right click to scan. This method scans ten 5x5 grids based on the direction the caster is looking. Each block has a temporary mob summoned in it, it detects what block its in and if it is inside a diamond block then the mob disguises itself temporarily then despawns. Else, it despawns instantly. The positions of the detected ores are relative to where actual ores are. 
-
-<img src="/gifs/xray.gif" alt="" width="50%" height="50%">  
 
 .
 .
