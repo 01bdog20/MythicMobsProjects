@@ -1,8 +1,7 @@
 <!-- This is a comment. It will not be displayed in the rendered output. -->
 
 # Bdog's MythicMobs Projects <a name="TOP"></a>
-A repository for my mythic mob projects. 
-Plugins involved: MythicMobs, ModelEngine, MythicCrucible, Libsdisguises
+A repository for my minecraft projects using plugins: MythicMobs, ModelEngine, MythicCrucible, Libsdisguises
 All files should work on 1.19.2.
 
 ## Table of Contents
