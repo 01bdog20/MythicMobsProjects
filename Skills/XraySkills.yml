@@ -1,0 +1,115 @@
+#################
+#Seethrough Test#
+#################
+
+OreDetect:
+   Cooldown: 
+   Conditions:
+   Skills:
+   - skill{s=OreDetect2} @self
+   - delay 100
+   - skill{s=OreDie} @self
+  
+OreDetect2:
+   Cooldown: 
+   Conditions:
+   - inblock{b=DIAMOND_ORE} castinstead OreDetectDiamondOre 
+   - inblock{b=DEEPSLATE_DIAMOND_ORE} castinstead OreDetectDeepDiamondOre 
+   Skills:
+   - skill{s=OreDie} @self
+   
+# It's totally possible to add more ore/block detections. Just add inblock conditions for OreDetect2 and create skills similar to the 2 below:
+
+OreDetectDiamondOre:
+   Cooldown: 
+   Conditions:
+   - inblock{b=DIAMOND_ORE} true
+   Skills:
+   - disguise{d="Falling_Block DIAMOND_ORE setGlowing true setGlowColor AQUA"} @self
+OreDetectDeepDiamondOre:
+   Cooldown: 
+   Conditions:
+   - inblock{b=DEEPSLATE_DIAMOND_ORE} true
+   Skills:
+   - disguise{d="Falling_Block DEEPSLATE_DIAMOND_ORE setGlowing true setGlowColor AQUA"} @self
+   
+OreDie:
+   Skills:
+   - remove @self 
+
+SeeThroughSummon:
+   Cooldown: 0.5
+   Skills:
+   - delay 5
+   - summon{type=SeeThroughDummy;amount=1;radius=0;onSurface=true} @Location{c=<caster.l.x.double>,<caster.l.y.double>,<caster.l.z.double>}
+
+SeeThrough:
+   Cooldown: 0.5
+   Skills:
+   - sound{s=item.shield.break;p=1.3;v=0.1} @ForwardWall{f=0;y=3.0;width=2;height=2}
+   - effect:blockmask{m=glass;r=1;d=80} @ForwardWall{f=0;y=3.0;width=2;height=2}
+   - effect:particles{p=enchanted_hit;amount=1;speed=0;hS=0.05;vS=0.05;repeat=14;repeatInterval=1} @ForwardWall{f=0;y=3.0;width=2;height=2}
+   - summon{type=OreDetector;amount=1;radius=0;onSurface=true} @ForwardWall{f=0;y=3.0;width=2;height=2}
+   - delay 2
+   - sound{s=item.shield.break;p=1.3;v=0.1} @ForwardWall{f=1;y=3.0;width=2;height=2}
+   - effect:blockmask{m=glass;r=1;d=80} @ForwardWall{f=1;y=3.0;width=2;height=2}
+   - effect:particles{p=enchanted_hit;amount=1;speed=0;hS=0.05;vS=0.05;repeat=14;repeatInterval=1} @ForwardWall{f=1;y=3.0;width=2;height=2}
+   - summon{type=OreDetector;amount=1;radius=0;onSurface=true} @ForwardWall{f=1;y=3.0;width=2;height=2}
+   - delay 2
+   - sound{s=item.shield.break;p=1.3;v=0.1} @ForwardWall{f=2;y=3.0;width=2;height=2}
+   - effect:blockmask{m=glass;r=1;d=80} @ForwardWall{f=2;y=3.0;width=2;height=2}
+   - effect:particles{p=enchanted_hit;amount=1;speed=0;hS=0.05;vS=0.05;repeat=14;repeatInterval=1} @ForwardWall{f=2;y=3.0;width=2;height=2}
+   - summon{type=OreDetector;amount=1;radius=0;onSurface=true} @ForwardWall{f=2;y=3.0;width=2;height=2}
+   - delay 2
+   - sound{s=item.shield.break;p=1.3;v=0.1} @ForwardWall{f=3;y=3.0;width=2;height=2}
+   - effect:blockmask{m=glass;r=1;d=80} @ForwardWall{f=3;y=3.0;width=2;height=2}
+   - effect:particles{p=enchanted_hit;amount=1;speed=0;hS=0.05;vS=0.05;repeat=14;repeatInterval=1} @ForwardWall{f=3;y=3.0;width=2;height=2}
+   - summon{type=OreDetector;amount=1;radius=0;onSurface=true} @ForwardWall{f=3;y=3.0;width=2;height=2}
+   - delay 2
+   - sound{s=item.shield.break;p=1.3;v=0.1} @ForwardWall{f=4;y=3.0;width=1;height=2}
+   - effect:blockmask{m=glass;r=1;d=80} @ForwardWall{f=4;y=3.0;width=2;height=2}
+   - effect:particles{p=enchanted_hit;amount=1;speed=0;hS=0.05;vS=0.05;repeat=14;repeatInterval=1} @ForwardWall{f=4;y=3.0;width=2;height=2}
+   - summon{type=OreDetector;amount=1;radius=0;onSurface=true} @ForwardWall{f=4;y=3.0;width=2;height=2}
+   - delay 2
+   - sound{s=item.shield.break;p=1.3;v=0.1} @ForwardWall{f=5;y=3.0;width=1;height=2}
+   - effect:blockmask{m=glass;r=1;d=80} @ForwardWall{f=5;y=3.0;width=2;height=2}
+   - effect:particles{p=enchanted_hit;amount=1;speed=0;hS=0.05;vS=0.05;repeat=14;repeatInterval=1} @ForwardWall{f=5;y=3.0;width=2;height=2}
+   - summon{type=OreDetector;amount=1;radius=0;onSurface=true} @ForwardWall{f=5;y=3.0;width=2;height=2}
+   - delay 2
+   - sound{s=item.shield.break;p=1.3;v=0.1} @ForwardWall{f=6;y=3.0;width=1;height=2}
+   - effect:blockmask{m=glass;r=1;d=80} @ForwardWall{f=6;y=3.0;width=2;height=2}
+   - effect:particles{p=enchanted_hit;amount=1;speed=0;hS=0.05;vS=0.05;repeat=14;repeatInterval=1} @ForwardWall{f=6;y=3.0;width=2;height=2}
+   - summon{type=OreDetector;amount=1;radius=0;onSurface=true} @ForwardWall{f=6;y=3.0;width=2;height=2}
+   - delay 2
+   - sound{s=item.shield.break;p=1.3;v=0.1} @ForwardWall{f=7;y=3.0;width=1;height=2}
+   - effect:blockmask{m=glass;r=1;d=80} @ForwardWall{f=7;y=3.0;width=2;height=2}
+   - effect:particles{p=enchanted_hit;amount=1;speed=0;hS=0.05;vS=0.05;repeat=14;repeatInterval=1} @ForwardWall{f=7;y=3.0;width=2;height=2}
+   - summon{type=OreDetector;amount=1;radius=0;onSurface=true} @ForwardWall{f=7;y=3.0;width=2;height=2}
+   - delay 2
+   - sound{s=item.shield.break;p=1.3;v=0.1} @ForwardWall{f=8;y=3.0;width=1;height=2}
+   - effect:blockmask{m=glass;r=1;d=80} @ForwardWall{f=8;y=3.0;width=2;height=2}
+   - effect:particles{p=enchanted_hit;amount=1;speed=0;hS=0.05;vS=0.05;repeat=14;repeatInterval=1} @ForwardWall{f=8;y=3.0;width=2;height=2}
+   - summon{type=OreDetector;amount=1;radius=0;onSurface=true} @ForwardWall{f=8;y=3.0;width=2;height=2}
+   - delay 2
+   - sound{s=item.shield.break;p=1.3;v=0.1} @ForwardWall{f=9;y=3.0;width=1;height=2}
+   - effect:blockmask{m=glass;r=1;d=80} @ForwardWall{f=9;y=3.0;width=2;height=2}
+   - effect:particles{p=enchanted_hit;amount=1;speed=0;hS=0.05;vS=0.05;repeat=14;repeatInterval=1} @ForwardWall{f=9;y=3.0;width=2;height=2}
+   - summon{type=OreDetector;amount=1;radius=0;onSurface=true} @ForwardWall{f=9;y=3.0;width=2;height=2}
+   - delay 2
+   - sound{s=item.shield.break;p=1.3;v=0.1} @ForwardWall{f=10;y=3.0;width=1;height=2}
+   - effect:blockmask{m=glass;r=1;d=80} @ForwardWall{f=10;y=3.0;width=2;height=2}
+   - effect:particles{p=enchanted_hit;amount=1;speed=0;hS=0.05;vS=0.05;repeat=14;repeatInterval=1} @ForwardWall{f=10;y=3.0;width=2;height=2}
+   - summon{type=OreDetector;amount=1;radius=0;onSurface=true} @ForwardWall{f=10;y=3.0;width=2;height=2}
+   - delay 2
+   - remove @self
+
+#Test skill to test variable portability. Not used.
+SeeThroughFunction:
+   Cooldown: 
+   Skills:
+   - variableMath{var=caster.see;e="(<caster.var.see> + 1)"} @self
+   - delay 1
+   - sound{s=item.shield.break;p=1.3;v=0.6} @ForwardWall{f=<caster.var.see>;y=3.0;width=1;height=1}
+   - effect:blockmask{m=glass;r=1;d=120} @ForwardWall{f=<caster.var.see>;y=3.0;width=1;height=1.5}
+   - effect:particles{p=enchanted_hit;amount=2;speed=0;hS=0.05;vS=0.05;repeat=14;repeatInterval=1} @ForwardWall{f=<caster.var.see>;y=3.0;width=1;height=1}
+   - message{m="See length = <caster.var.see>"} @PIR{r=20}
