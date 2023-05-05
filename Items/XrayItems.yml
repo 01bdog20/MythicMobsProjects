@@ -1,0 +1,7 @@
+SeeThrough:
+  Id: structure_void
+  Display: '&7xray'
+  Model: 2
+  Lore:
+  Skills:
+  - skill{s=SeeThroughSummon} @origin ~onUse
